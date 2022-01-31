@@ -262,3 +262,18 @@ function dividedBy(x) {
   }
 }
 ```
+
+### TASK 7
+###### https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/train/javascript
+
+<img width="1280" alt="Screenshot 2022-01-31 at 18 23 55" src="https://user-images.githubusercontent.com/67319575/151821307-65393896-7cc0-4e2d-8bba-24b6a645cc43.png">
+
+```
+function add(n){
+  let sum = (y) => add(n + y);
+  
+  sum.valueOf = () => n;
+  
+  return sum
+}
+```
