@@ -93,3 +93,21 @@ function order(words){
     return arr.join(' ');
 }
 ```
+
+### TASK 3
+###### https://www.codewars.com/kata/does-my-number-look-big-in-this/train/javascript
+
+<img width="1280" alt="Screenshot 2022-01-31 at 13 30 47" src="https://user-images.githubusercontent.com/67319575/151778062-2a3e357d-a12a-4091-a2b7-36dc93a14d85.png">
+
+```
+function narcissistic(value) {
+  let degree = String(value).length;
+  let numNew = 0;
+  
+  String(value).split('').forEach((elem) => {
+    numNew += Math.pow(elem, degree);
+  })
+  
+  return value === numNew ? true : false;
+}
+```
