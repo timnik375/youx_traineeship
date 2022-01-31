@@ -189,3 +189,76 @@ function cakes(recipe, available) {
   return isNaN(result[0])? 0: result[0];
 }
 ```
+
+### TASK 6
+###### https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/train/javascript
+
+<img width="1280" alt="Screenshot 2022-01-31 at 17 47 20" src="https://user-images.githubusercontent.com/67319575/151814708-f923506e-498e-498f-b37d-edcad9cfc0ba.png">
+
+```
+function getValue(callback, num) {
+    return typeof callback === 'function' ? callback(num) : num;
+}
+
+function zero(callback) {
+  let num = 0;
+  return getValue(callback, num);
+}
+function one(callback) {
+  let num = 1;
+  return getValue(callback, num);
+}
+function two(callback) {
+  let num = 2;
+  return getValue(callback, num);
+}
+function three(callback) {
+  let num = 3;
+  return getValue(callback, num);
+}
+function four(callback) {
+  let num = 4;
+  return getValue(callback, num);
+}
+function five(callback) {
+  let num = 5;
+  return getValue(callback, num);
+}
+function six(callback) {
+  let num = 6;
+  return getValue(callback, num);
+}
+function seven(callback) { 
+  let num = 7;
+  return getValue(callback, num);
+}
+function eight(callback) {
+  let num = 8;
+  return getValue(callback, num);
+}
+function nine(callback) {
+  let num = 9;
+  return getValue(callback, num);
+}
+
+function plus(x) {
+  return function (y) {
+    return x + y;
+  }
+}
+function minus(x) {
+  return function (y) {
+    return y - x;
+  }
+}
+function times(x) {
+  return function (y) {
+    return x * y;
+  }
+}
+function dividedBy(x) {
+  return function (y) {
+    return Math.floor(y/x);
+  }
+}
+```
