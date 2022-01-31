@@ -171,3 +171,21 @@ Array.prototype.odd = function () {
   return result;
 }
 ```
+
+### TASK 5
+###### https://www.codewars.com/kata/pete-the-baker/train/javascript
+
+<img width="1280" alt="Screenshot 2022-01-31 at 16 04 03" src="https://user-images.githubusercontent.com/67319575/151798632-1d5ded40-a841-4dfc-9849-a99492a734d1.png">
+
+```
+function cakes(recipe, available) {
+  let result = [];
+  for (key in recipe) {
+    result.push(Math.floor(available[key]/recipe[key]));
+  }
+  
+  result.sort((a, b) => a - b);
+  
+  return isNaN(result[0])? 0: result[0];
+}
+```
