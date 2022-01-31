@@ -111,3 +111,63 @@ function narcissistic(value) {
   return value === numNew ? true : false;
 }
 ```
+
+### TASK 4
+###### https://www.codewars.com/kata/array-helpers/train/javascript
+
+<img width="1280" alt="Screenshot 2022-01-31 at 14 50 42" src="https://user-images.githubusercontent.com/67319575/151789274-c9a26d02-8de3-44fd-92a6-9d7e78ac0966.png">
+
+```
+Array.prototype.square = function () {
+  let result = [];
+  this.forEach((elem) => {
+    result.push(Math.pow(elem, 2));
+  })
+  
+  return result;
+}
+
+Array.prototype.cube = function () {
+  let result = [];
+  this.forEach((elem) => {
+    result.push(Math.pow(elem, 3));
+  })
+  
+  return result;
+}
+
+Array.prototype.sum = function () {
+  let result = 0;
+  this.forEach((elem) => {
+    result += elem;
+  })
+  
+  return result;
+}
+
+Array.prototype.average = function () {
+  return this.sum()/this.length;
+}
+
+Array.prototype.even = function () {
+  let result = [];
+  this.forEach((elem) => {
+    if (elem%2 === 0) {
+      result.push(elem)
+    }
+  })
+  
+  return result;
+}
+
+Array.prototype.odd = function () {
+  let result = [];
+  this.forEach((elem) => {
+    if (elem%2 !== 0) {
+      result.push(elem)
+    }
+  })
+  
+  return result;
+}
+```
