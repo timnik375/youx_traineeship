@@ -68,3 +68,28 @@ function goodVsEvil(good, evil) {
     }
 }
 ```
+
+### TASK 2
+###### https://www.codewars.com/kata/your-order-please/train/javascript
+
+<img width="1280" alt="Screenshot 2022-01-31 at 13 00 14" src="https://user-images.githubusercontent.com/67319575/151773717-549f4e28-cbbe-47b0-934b-242d3fd89012.png">
+
+```
+function order(words){
+    let arr = words.split(' ');
+    let arrLength = arr.length;
+  
+    if (arrLength === 0) {
+      return ' ';
+    }
+  
+    for (let i = 0; i < arrLength-1; i++) {
+      for (let j = 0; j < arrLength-1-i; j++) {
+        if (arr[j+1].match(/\d+/) < arr[j].match(/\d+/)) {
+          let t = arr[j+1]; arr[j+1] = arr[j]; arr[j] = t;
+        }
+      }
+     }                     
+    return arr.join(' ');
+}
+```
