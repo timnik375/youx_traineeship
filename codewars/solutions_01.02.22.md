@@ -3,7 +3,7 @@
 ### TASK 1
 ###### https://www.codewars.com/kata/52761ee4cffbc69732000738/train/javascript
 
-
+<img width="1280" alt="Screenshot 2022-02-01 at 14 27 49" src="https://user-images.githubusercontent.com/67319575/151961595-9645b8a0-0611-42cf-b39b-514b315fb420.png">
 
 ```
 tree.prototype.describe = function () {
