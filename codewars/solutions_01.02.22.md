@@ -164,3 +164,28 @@ function whoseBicycle(...args) {
   }
 }
 ```
+
+### TASK 7
+###### https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-01 at 18 15 32" src="https://user-images.githubusercontent.com/67319575/151995843-92f8facd-ba99-4d7c-bc89-ffab365a75d0.png">
+
+```
+function createPhoneNumber(numbers){
+  let firstPart = '';
+  let secondPart = '';
+  let thirdPart = '';
+  
+  numbers.forEach((elem, index) => {
+    if (index < 3) {
+      firstPart += elem;
+    } else if (index < 6) {
+      secondPart += elem;
+    } else {
+      thirdPart += elem;
+    }
+  })
+  
+  return `(${firstPart}) ${secondPart}-${thirdPart}`;
+}
+```
