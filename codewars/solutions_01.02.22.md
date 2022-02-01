@@ -125,3 +125,42 @@ var Calculator = {
  }
 };
 ```
+
+### TASK 6
+###### https://www.codewars.com/kata/5a2cb4bff28b820c33000082/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-01 at 18 03 17" src="https://user-images.githubusercontent.com/67319575/151993664-e0f11a4b-abca-407c-9376-c42faba3e162.png">
+
+```
+function whoseBicycle(...args) {
+  let result = [];
+  
+  args.forEach((elem) => {
+    result.push(Object.values(elem).reduce((sum, cur) => sum + cur))
+  })
+
+  let sonNum = null;
+  let sonHighScore = 0;
+  
+  result.forEach((elem, index) => {
+    if (elem > sonHighScore) {
+      sonNum = index;
+      sonHighScore = elem;
+    }
+    
+    if (elem === sonHighScore) {
+        sonNum = Object.values(ageTable)[sonNum] < Object.values(ageTable)[index] ? sonNum : index;
+        sonHighScore = Object.values(ageTable)[sonNum] < Object.values(ageTable)[index] ? sonHighScore : elem;
+    }
+  })
+
+  switch(sonNum) {
+    case 0:
+      return 'I need to buy a bicycle for my first son.';
+    case 1:
+      return 'I need to buy a bicycle for my second son.';
+    case 2:
+      return 'I need to buy a bicycle for my third son.';
+  }
+}
+```
