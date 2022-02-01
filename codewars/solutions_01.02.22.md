@@ -32,3 +32,27 @@ tree.prototype.chopBranch = function (n) {
   this.leaves = this.leaves - n*100 <= 0? 0 : this.leaves - n*100;
 }
 ```
+
+### TASK 2
+###### https://www.codewars.com/kata/57f625992f4d53c24200070e/solutions/javascript
+
+<img width="1280" alt="Screenshot 2022-02-01 at 15 21 24" src="https://user-images.githubusercontent.com/67319575/151967775-a1cd3b60-464c-426f-ba17-47ddf30c5bce.png">
+
+```
+function bingo(ticket, win){
+  let winCounter = 0;
+  
+  ticket.forEach((elem) => {
+    for (let i = 0; i < elem[0].length; i++) {
+      if (elem[0].charCodeAt(i) === elem[1]) {
+        winCounter++;
+        i = elem[0].length;
+      }
+    }
+  })
+  
+  
+  return winCounter >= win ? 'Winner!' : 'Loser!';
+}
+```
+
