@@ -112,3 +112,16 @@ function DNAStrand(dna){
   return dna.split('').map(item => item === 'A'? 'T' : item === 'T' ? 'A' : item === 'G' ? 'C': item === 'C'? 'G' : item).join('');  
 }
 ```
+
+### TASK 5
+###### https://www.codewars.com/kata/529f32794a6db5d32a00071f/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-01 at 16 55 00" src="https://user-images.githubusercontent.com/67319575/151981447-8409ba40-e199-4b02-ba57-62c8fd601596.png">
+
+```
+var Calculator = {
+ average: function(...args) {
+   return args.length === 0 ? 0: args.reduce((sum, current) => sum + current)/args.length
+ }
+};
+```
