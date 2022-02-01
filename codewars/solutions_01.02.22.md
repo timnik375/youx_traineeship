@@ -56,3 +56,48 @@ function bingo(ticket, win){
 }
 ```
 
+
+### TASK 3
+###### https://www.codewars.com/kata/513e08acc600c94f01000001/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-01 at 16 25 17" src="https://user-images.githubusercontent.com/67319575/151976684-9e7a2a4a-1384-4124-9751-a84eeed75b3d.png">
+
+```
+function rgb(r, g, b){
+  let color = '';
+  
+  for(let i = 0; i < arguments.length; i++) {
+    color += numConvert(arguments[i]);
+  }
+
+  return color;
+}
+
+function numConvert (num) {
+  let result = '';
+  
+  num = Number(num);
+  
+  if (num <= 0) {
+    return result += '00';
+  }
+  
+  if (num >= 255) {
+    return result += 'FF';
+  }
+  
+  const hexArr = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
+  
+  if (num/16 !== 0) {
+    result += hexArr[Math.floor(num/16)];
+    result += hexArr[num%16];
+    
+    return result;
+  } else {
+    result += hexArr[num];
+    result += hexArr[num];
+    
+    return result;
+  }
+}
+```
