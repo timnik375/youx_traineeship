@@ -101,3 +101,14 @@ function numConvert (num) {
   }
 }
 ```
+
+### TASK 4
+###### https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-01 at 16 41 46" src="https://user-images.githubusercontent.com/67319575/151979187-f16924d8-fc6b-4d64-b8e5-b6dc1cee6a73.png">
+
+```
+function DNAStrand(dna){
+  return dna.split('').map(item => item === 'A'? 'T' : item === 'T' ? 'A' : item === 'G' ? 'C': item === 'C'? 'G' : item).join('');  
+}
+```
