@@ -37,3 +37,14 @@ function explode(s) {
   return result;
 }
 ```
+
+### TASK 3
+###### https://www.codewars.com/kata/585b1fafe08bae9988000314/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-02 at 11 06 03" src="https://user-images.githubusercontent.com/67319575/152116104-3e0dcccf-736d-4f85-851b-fe2009213fb9.png">
+
+```
+function nicknameGenerator(name){
+  return name.length < 4 ? 'Error: Name too short' : /[a,e,i,o,u]/gi.test(name[2]) ? name.substr(0,4): name.substr(0,3);
+}
+```
