@@ -6,6 +6,7 @@
 <img width="1280" alt="Screenshot 2022-02-02 at 10 24 09" src="https://user-images.githubusercontent.com/67319575/152111472-fad27c4a-a99e-46f1-b547-d682cd2d03b8.png">
 
 ```
+function myLanguages(results) {
   let result = [];
   
   Object.entries(results).sort((a,b) => b[1] - a[1]).forEach((elem) => {
@@ -15,6 +16,7 @@
   })
   
   return result
+}
 ```
 
 ### TASK 2
