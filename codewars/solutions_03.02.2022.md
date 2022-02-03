@@ -17,23 +17,17 @@ var Ball = function(ballType='regular') {
 
 ```
 class Song {
-  listeners = new Set();
-
   constructor(title, artist) {
     this.title = title;
     this.artist = artist;
+    this.listeners = new Set();
   }
   
   howMany (arrListeners) {
-    let counter = 0;
-    arrListeners.forEach((elem) => {
-      if (!this.listeners.has(elem.toLowerCase())) {
-        counter++;
-        this.listeners.add(elem.toLowerCase());
-      };
-    })
+    let prevDayListeners = this.listeners.size;
+    arrListeners.forEach(elem => {this.listeners.add(elem.toLowerCase())})
     
-    return counter;
+    return this.listeners.size - prevDayListeners;
   }
 }
 ```
