@@ -65,3 +65,32 @@ class Dog extends Animal {
   }
 }
 ```
+
+### TASK 4
+###### https://www.codewars.com/kata/56fcc1ee45040039ab0016da/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-03 at 19 53 59" src="https://user-images.githubusercontent.com/67319575/152390105-4884d995-3357-4ce9-9389-7b6dea812c5e.png">
+
+```
+class Cube {
+  constructor(length) {
+    this.length = length;
+  }
+  
+  get surfaceArea () {
+    return 6*Math.pow(this.length,2);
+  }
+  
+  set surfaceArea (value) {
+    this.length = Math.sqrt(value/6);
+  }
+  
+  get volume () {
+    return Math.pow(this.length,3);
+  }
+  
+  set volume (value) {
+    this.length = Math.cbrt(value);
+  }
+}
+```
