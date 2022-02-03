@@ -31,3 +31,37 @@ class Song {
   }
 }
 ```
+
+### TASK 3
+###### https://www.codewars.com/kata/56f935002e6c0d55fa000d92/train/javascript
+
+<img width="1280" alt="Screenshot 2022-02-03 at 19 13 47" src="https://user-images.githubusercontent.com/67319575/152382266-305df67b-36bd-4759-b547-97b46bf877fb.png">
+
+```
+class Shark extends Animal {
+  constructor(name,age,status) {
+    super(name, age, 0, "shark", status);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name,age,status) {
+    super(name, age, 4, "cat", status);
+  }
+  
+  introduce() {
+    return super.introduce() + '  Meow meow!'
+  }
+}
+
+class Dog extends Animal {
+  constructor (name,age,status,master) {
+    super(name, age, 4, "dog", status);
+    this.master = master;
+  }
+  
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
+}
+```
